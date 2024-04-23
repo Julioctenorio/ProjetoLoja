@@ -11,7 +11,7 @@
       integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/./output.css" />
-    <script src="./src/js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
     <title>GL - O melhor lava jato da cidade</title>
   </head>
@@ -147,7 +147,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-lg">R$ 35.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Burguer da Casa" data-price="35.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Burguer da Casa" data-price="35.90" >
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -165,7 +165,7 @@
     </div>
 
     <!--Grid Bebidas-->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
       <div class="flex gap-2">
         <img src="./assets/refri-1.png" alt="Coca Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         <div>
@@ -175,7 +175,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-lg">R$ 5.00</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Lata" data-price="22.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Lata" data-price="5.00">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -191,7 +191,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-lg">R$ 5.00</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná Lata" data-price="22.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Lata" data-price="5.00">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -202,7 +202,7 @@
     <!--Fim menu-->
 
     <!--Modal Cart-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-5">Meu carrinho</h2>
 
