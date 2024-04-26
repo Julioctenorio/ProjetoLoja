@@ -141,11 +141,23 @@ addressInput.addEventListener('input', function(event){
 // Finalizar pedido
 checkoutBtn.addEventListener('click', function(){
 
-//  const isOpen = checkIsOpen();
-//  if(!isOpen){
-//    alert('RESTAURANTE FECHADO NO MOMENTO!')
-//    return;
-//  }
+  const isOpen = checkIsOpen();
+  if(!isOpen){
+    Toastify({
+      text: "Ops, o restaurante esta fechado!",
+      duration: 3000,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "#ef4444)",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
+
+    return;
+  }
 
   if(cart.length === 0) return;
   if(addressInput.value === ''){
@@ -166,8 +178,9 @@ checkoutBtn.addEventListener('click', function(){
 
   window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, '_blanck')
 
-  console.log(cartItems)
 
+  cart.length = 0;
+  updateCartModal();
 })
 
 
