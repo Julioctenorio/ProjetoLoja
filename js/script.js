@@ -144,7 +144,7 @@ checkoutBtn.addEventListener('click', function(){
   const isOpen = checkIsOpen();
   if(!isOpen){
     Toastify({
-      text: "Ops, estamos fechados no momento!",
+      text: "Ops, as maquinas estão descansando neste momento!",
       duration: 3000,
       close: true,
       gravity: "top", // `top` or `bottom`
