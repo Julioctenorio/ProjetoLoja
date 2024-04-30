@@ -50,23 +50,39 @@
       </div>
     </header>
 
-    <nav class="flex bg-stone-800 w-[85%] h-12 mx-auto text-center justify-center items-center md:gap-6 md:w-[40%] xl:gap-16 xl:w-[40%]  rounded mt-2">
-      <ul class="flex font-medium text-2xl">
-        <li class="mr-6 mt-1 md:mt-2 xl:mr-10 hover:underline">
+    <nav class="flex bg-stone-800 w-[90%] h-12 mx-auto text-center justify-center md:w-[40%] xl:w-[40%]  rounded mt-2">
+      <ul class="flex font-medium text-2xl gap-10 ">
+        <li class="mt-1 md:mt-2 hover:border-b-2 hover:border-white">
           <a class="text-gray-400 hover:text-white" href="#">Inicio</a>
         </li>
-        <li class="mr-6 mt-1 md:mt-2 xl:mr-10 hover:underline">
+        <li class="mt-1 md:mt-2 hover:border-b-2 border-white">
           <a class="text-gray-400 hover:text-white" href="#">Sobre</a>
         </li>
-        <li class="mr-6 mt-1 md:mt-2 xl:mr-10 hover:underline">
+        <li class="mt-1 md:mt-2 hover:border-b-2 border-white">
           <a class="text-gray-400 hover:text-white" href="#">Serviços</a>
         </li>
-        <li class="mr-6 mt-1 md:mt-2 xl:mr-10 hover:underline">
+        <li class="mt-1 md:mt-2 hover:border-b-2 border-white">
           <a class="text-gray-400 hover:text-white " href="#">Login</a>
         </li>
       </ul>
     </nav>
 
+    <!--Serviços-->
+    <div class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <div class="text-left">
+          <p class="text-green-500 text-2xl font-medium uppercase">Serviço de qualidade</p>
+          <h2 class="font-bold py-5 text-4xl text-gray-900">Interiores, Exteriores, Motor, Estofos, Ceras, Polimento e Tratamentos Personalizados</h2>
+          <p class="font-light">GL ESTÉTICA AUTOMOTIVA presta serviço de lavagem e tratamento automóvel. Temos uma tabela de serviços diversificada que vai de encontro com o que procura e valoriza. Entre em contato conosco.</p>
+        </div>
+        <div>
+          <img src="./assets/card3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!--Serviços-->
+    <div id="services" class="hidden">
     <!--Fim do Header-->
     <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
       Conheça nossos serviços
@@ -257,6 +273,7 @@
 
     </div>
     <!--Fim Modal Cart-->
+  </div>
 
     <!--Button Cart Footer-->
     <footer class="w-full bg-red-500 text-center py-2 fixed bottom-0 z-40 flex items-center justify-center">
@@ -269,25 +286,24 @@
     <!--Fim Button Cart Footer-->
 
 
-    <footer class="grid relative border-b-2 pb-1 w-full h-24 mt-14">
-        <div class="links-column socials-column grid gap-1 text-center">
+    <footer class="grid relative border-b-2 pb-1 w-full h-24 mt-8 bg-stone-700">
+        <div class="links-column socials-column grid gap-1 text-center text-gray-300">
           <h2>Siga-nos</h2>
 
-          <div class="flex items-center justify-center gap-4 sm:">
+          <div class="flex items-center justify-center gap-4 mb-4 ">
             
-            <a href="https://www.facebook.com/luhan.costa" target="_blank"><img src="./src/images/fb-w....png" alt="" id="face"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+            <a href="https://www.facebook.com/luhan.costa" target="_blank"><i class="fa-brands fa-facebook fa-2xl text-blue-800"></i></a>
             
-            <a href="https://www.instagram.com/gl_esteticaautomotivaa" target="_blank"><img src="./src/images/insta-w.png"
-                alt="" id="insta"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+            <a href="https://www.instagram.com/gl_esteticaautomotivaa" target="_blank"><i class="fa-brands fa-instagram fa-2xl text-pink-600"></i></a>
                 
-            <a href="https://wa.me/5527999231406" target="_blank"><img src="./src/images/wpp-w.png" alt="" id="wpp"><i class="fa-brands fa-square-whatsapp fa-2xl"></i></a>
+            <a href="https://wa.me/5527999231406" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl text-green-400"></i></a>
           </div>
         </div>
       </div>
     </footer>
   
-    <footer class="mb-12 items-center text-center">
-      <p class="copyright"> Julioctenorio © 2024 ...</p>
+    <footer class="pb-12 items-center text-center bg-stone-700 text-gray-300 text-xs">
+      <p class="copyright pt-3"> Julioctenorio © 2024</p>
     </footer>
   
   </body>
