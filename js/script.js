@@ -10,6 +10,11 @@ const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 
+const start = document.getElementById("onFirst");
+const about = document.getElementById("onAbout");
+const services = document.getElementById("onService");
+const login = document.getElementById("onLogin");
+
 let cart = [];
 
 // Abrir o modal do carrinho
@@ -134,8 +139,9 @@ addressInput.addEventListener('input', function(event){
     addressInput.classList.remove('border-red-500')
     addressWarn.classList.add('hidden')
   }
-
 })
+
+
 
 
 // Finalizar pedido
