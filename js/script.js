@@ -9,13 +9,43 @@ const checkoutBtn = document.getElementById("checkout-btn");
 const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
-
-const start = document.getElementById("onFirst");
-const about = document.getElementById("onAbout");
-const services = document.getElementById("onService");
-const login = document.getElementById("onLogin");
+const nav = document.querySelectorAll('.nav-item')
 
 let cart = [];
+
+// Menu
+// Função para exibir apenas a seção "Início"
+function showStartSection() {
+  console.log("Início clicado");
+  document.getElementById('onStart').classList.remove('hidden');
+  document.getElementById('about').classList.add('hidden');
+  document.getElementById('services').classList.add('hidden');
+}
+
+// Função para exibir apenas a seção "Sobre"
+function showAboutSection() {
+  console.log("Sobre clicado");
+  document.getElementById('onStart').classList.add('hidden');
+  document.getElementById('about').classList.remove('hidden');
+  document.getElementById('services').classList.add('hidden');
+}
+
+// Função para exibir apenas a seção "Serviços"
+function showServicesSection() {
+  console.log("Serviços clicado");
+  document.getElementById('onStart').classList.add('hidden');
+  document.getElementById('about').classList.add('hidden');
+  document.getElementById('services').classList.remove('hidden');
+}
+
+// Event Listeners para os itens do menu
+console.log("Registrando ouvintes de eventos");
+document.getElementById('onStart').addEventListener('click', showStartSection);
+document.getElementById('about').addEventListener('click', showAboutSection);
+document.getElementById('services').addEventListener('click', showServicesSection);
+
+
+
 
 // Abrir o modal do carrinho
 cartBtn.addEventListener("click", function () {
@@ -120,8 +150,8 @@ function removeCartItemCart(name) {
 
   if (index !== -1) {
     const item = cart[index];
-    
-    if(item.quantity > 1) {
+
+    if (item.quantity > 1) {
       item.quantity -= 1;
       updateCartModal();
       return;
@@ -132,10 +162,10 @@ function removeCartItemCart(name) {
   }
 }
 
-addressInput.addEventListener('input', function(event){
+addressInput.addEventListener('input', function (event) {
   let inputValue = event.target.value;
 
-  if(inputValue !== ''){
+  if (inputValue !== '') {
     addressInput.classList.remove('border-red-500')
     addressWarn.classList.add('hidden')
   }
@@ -144,11 +174,13 @@ addressInput.addEventListener('input', function(event){
 
 
 
+
+
 // Finalizar pedido
-checkoutBtn.addEventListener('click', function(){
+checkoutBtn.addEventListener('click', function () {
 
   const isOpen = checkIsOpen();
-  if(!isOpen){
+  if (!isOpen) {
     Toastify({
       text: "Ops, o restaurante esta fechado!",
       duration: 3000,
@@ -159,14 +191,14 @@ checkoutBtn.addEventListener('click', function(){
       style: {
         background: "#ef4444)",
       },
-      onClick: function(){} // Callback after click
+      onClick: function () { } // Callback after click
     }).showToast();
 
     return;
   }
 
-  if(cart.length === 0) return;
-  if(addressInput.value === ''){
+  if (cart.length === 0) return;
+  if (addressInput.value === '') {
     addressWarn.classList.remove('hidden')
     addressInput.classList.add('border-red-500')
     return
@@ -176,7 +208,7 @@ checkoutBtn.addEventListener('click', function(){
   const cartItems = cart.map((item) => {
     return (
       `${item.name}\n Quantidade: (${item.quantity})\n Preço: R$${item.price} \n\n`
-      `${cart.total}` //verificar erro
+        `${cart.total}` //verificar erro
     )
   }).join('')
 
@@ -192,10 +224,10 @@ checkoutBtn.addEventListener('click', function(){
 
 
 // Verificar a hora e manipular o card horario
-function checkIsOpen(){
+function checkIsOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 18 && hora < 22; 
+  return hora >= 18 && hora < 22;
   //true = restaurante esta aberto
 }
 
@@ -203,10 +235,10 @@ function checkIsOpen(){
 const spanItem = document.getElementById('date-span')
 const isOpen = checkIsOpen()
 
-if(isOpen){
+if (isOpen) {
   spanItem.classList.remove('bg-red-500');
   spanItem.classList.add('bg-green-600')
-}else{
+} else {
   spanItem.classList.remove('bg-green-600');
   spanItem.classList.add('bg-red-500')
 }
