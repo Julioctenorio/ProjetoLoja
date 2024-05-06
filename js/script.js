@@ -15,34 +15,28 @@ let cart = [];
 
 // Menu
 // Função para exibir apenas a seção "Início"
-function showStartSection() {
-  console.log("Início clicado");
-  document.getElementById('onStart').classList.remove('hidden');
-  document.getElementById('about').classList.add('hidden');
-  document.getElementById('services').classList.add('hidden');
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const menuLinks = document.querySelectorAll('nav ul li a');
 
-// Função para exibir apenas a seção "Sobre"
-function showAboutSection() {
-  console.log("Sobre clicado");
-  document.getElementById('onStart').classList.add('hidden');
-  document.getElementById('about').classList.remove('hidden');
-  document.getElementById('services').classList.add('hidden');
-}
+  menuLinks.forEach(function(menuLink) {
+      menuLink.addEventListener('click', function(event) {
+          event.preventDefault();
 
-// Função para exibir apenas a seção "Serviços"
-function showServicesSection() {
-  console.log("Serviços clicado");
-  document.getElementById('onStart').classList.add('hidden');
-  document.getElementById('about').classList.add('hidden');
-  document.getElementById('services').classList.remove('hidden');
-}
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
 
-// Event Listeners para os itens do menu
-console.log("Registrando ouvintes de eventos");
-document.getElementById('onStart').addEventListener('click', showStartSection);
-document.getElementById('about').addEventListener('click', showAboutSection);
-document.getElementById('services').addEventListener('click', showServicesSection);
+          if (targetSection) {
+              const allSections = document.querySelectorAll('.page-menu');
+              allSections.forEach(function(section) {
+                  section.classList.add('hidden');
+              });
+
+              targetSection.classList.remove('hidden');
+          }
+      });
+  });
+});
+
 
 
 
