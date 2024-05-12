@@ -735,6 +735,16 @@ video {
   clear: none;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -748,6 +758,16 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-10 {
@@ -782,10 +802,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -808,6 +824,18 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .box-border {
@@ -1511,16 +1539,16 @@ video {
   gap: 0.25rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-7 {
@@ -2920,13 +2948,13 @@ body {
 }
 
 .accordion {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
-  height: 35.8rem;
-  gap: 1rem;
+  margin: 0 auto;
+  height: 30rem;
+  gap: 0.1rem;
   transition: 0.3s;
-  margin: 1.5rem 0 4rem;
 }
 
 .accordion:hover {
@@ -2935,8 +2963,8 @@ body {
 
 .accordion h2 {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 45px;
+  font-size: 18px;
+  line-height: 25px;
   border-bottom: 2px solid #fff;
   white-space: nowrap;
 }
@@ -2944,10 +2972,9 @@ body {
 .accordion li {
   position: relative;
   overflow: hidden;
-  flex: 0 0 8.5rem;
+  flex: 0 0 4rem;
   border-radius: 50px;
   opacity: 0.75px;
-  cursor: pointer;
 }
 
 .accordion li img {
@@ -2962,9 +2989,9 @@ body {
 }
 
 .accordion li,
-.accordion li img,
-.accordion li .contents,
-.accordion li .contents span {
+  .accordion li img,
+  .accordion li .contents,
+  .accordion li .contents span {
   transition: 0.3s;
 }
 
@@ -2979,10 +3006,10 @@ body {
   padding: 15px;
   background: #02022e;
   background: linear-gradient(
-    0deg,
-    rgb(0 0 0 / 70%) 10%,
-    rgb(255 255 255 / 0%) 100%
-  );
+      0deg,
+      rgb(0 0 0 / 70%) 10%,
+      rgb(255 255 255 / 0%) 100%
+    );
   opacity: 0;
   visibility: hidden;
 }
@@ -2998,9 +3025,8 @@ body {
 }
 
 .accordion li:hover {
-  flex: 0 1 50rem;
+  flex: 0 1 17rem;
   scale: 1.1;
-  z-index: 10;
   opacity: 1;
 }
 
@@ -3015,17 +3041,210 @@ body {
   visibility: visible;
 }
 
-.about-services h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  align-items: center;
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+@media (min-width: 768px) {
+  .accordion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    gap: 0.1rem;
+    transition: 0.3s;
+  }
+
+  .accordion:hover {
+    gap: 0;
+  }
+
+  .accordion h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    border-bottom: 2px solid #fff;
+    white-space: nowrap;
+  }
+
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 4rem;
+    border-radius: 50px;
+    opacity: 0.75px;
+  }
+
+  .accordion li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .accordion li,
+  .accordion li img,
+  .accordion li .contents,
+  .accordion li .contents span {
+    transition: 0.3s;
+  }
+
+  .accordion li .contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+    background: #02022e;
+    background: linear-gradient(
+      0deg,
+      rgb(0 0 0 / 70%) 10%,
+      rgb(255 255 255 / 0%) 100%
+    );
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .accordion li .contents span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 50px;
+    translate: -300px 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .accordion li:hover {
+    flex: 0 1 29rem;
+    scale: 1.1;
+    opacity: 1;
+  }
+
+  .accordion li:hover .contents {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .accordion li:hover span {
+    translate: -50% 0;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
-.about-services {
-  padding: 3rem 0 2rem;
+@media (min-width: 1280px) {
+  .accordion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 35.8rem;
+    gap: 1rem;
+    transition: 0.3s;
+    margin: 1.5rem 0 4rem;
+  }
+
+  .accordion:hover {
+    gap: 0;
+  }
+
+  .accordion h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    border-bottom: 2px solid #fff;
+    white-space: nowrap;
+  }
+
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 8.5rem;
+    border-radius: 50px;
+    opacity: 0.75px;
+    cursor: pointer;
+  }
+
+  .accordion li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .accordion li,
+  .accordion li img,
+  .accordion li .contents,
+  .accordion li .contents span {
+    transition: 0.3s;
+  }
+
+  .accordion li .contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+    background: #02022e;
+    background: linear-gradient(
+      0deg,
+      rgb(0 0 0 / 70%) 10%,
+      rgb(255 255 255 / 0%) 100%
+    );
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .accordion li .contents span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 50px;
+    translate: -300px 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .accordion li:hover {
+    flex: 0 1 50rem;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+  }
+
+  .accordion li:hover .contents {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .accordion li:hover span {
+    translate: -50% 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .about-services h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-services {
+    padding: 3rem 0 2rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3240,8 +3459,8 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[80\%\] {
-    width: 80%;
+  .sm\:w-12 {
+    width: 3rem;
   }
 
   .sm\:max-w-md {
@@ -3265,10 +3484,6 @@ body {
 @media (min-width: 768px) {
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .md\:h-screen {
@@ -3328,11 +3543,48 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .xl\:w-\[40\%\] {
     width: 40%;
   }
 
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .xl\:p-0 {
     padding: 0px;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:font-medium {
+    font-weight: 500;
   }
 }
