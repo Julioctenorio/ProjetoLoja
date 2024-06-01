@@ -6,6 +6,22 @@ body {
   background-color: #f6f7f8;
 }
 
+footer {
+  position: relative;
+  z-index: 10; /* Garanta que ele está em cima de outros elementos */
+  width: 100%;
+}
+
+footer .bg-stone-700 {
+  padding-bottom: 3rem; /* Ajuste conforme necessário */
+}
+
+footer .w-full {
+  position: fixed;
+  bottom: 0;
+  z-index: 40;
+}
+
 
 
 

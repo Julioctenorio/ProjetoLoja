@@ -38,6 +38,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+function mostrarSecao(id) {
+  // Seleciona todas as seções
+  var secoes = document.querySelectorAll('.page-menu');
+  
+  // Percorre todas as seções
+  secoes.forEach(function(secao) {
+    // Verifica se o ID da seção é igual ao ID passado como argumento
+    if (secao.id === id) {
+      // Se for igual, mostra a seção
+      secao.classList.remove('hidden');
+    } else {
+      // Caso contrário, oculta a seção
+      secao.classList.add('hidden');
+    }
+  });
+}
+
 
 
 

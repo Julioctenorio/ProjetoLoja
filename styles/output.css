@@ -740,9 +740,9 @@ video {
   margin-right: 0.75rem;
 }
 
-.mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto {
@@ -758,16 +758,6 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mb-10 {
@@ -792,6 +782,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .ml-3 {
@@ -824,18 +818,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
 }
 
 .box-border {
@@ -941,8 +923,8 @@ video {
   height: 3rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-28 {
@@ -967,6 +949,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .w-28 {
@@ -1003,6 +989,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .min-w-\[90\%\] {
@@ -1535,10 +1529,6 @@ video {
   justify-items: stretch;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -2034,6 +2024,11 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .border-red-500 {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
@@ -2299,8 +2294,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pt-10 {
@@ -2945,6 +2948,24 @@ video {
 
 body {
   background-color: #f6f7f8;
+}
+
+footer {
+  position: relative;
+  z-index: 10;
+  /* Garanta que ele está em cima de outros elementos */
+  width: 100%;
+}
+
+footer .bg-stone-700 {
+  padding-bottom: 3rem;
+  /* Ajuste conforme necessário */
+}
+
+footer .w-full {
+  position: fixed;
+  bottom: 0;
+  z-index: 40;
 }
 
 .accordion {
