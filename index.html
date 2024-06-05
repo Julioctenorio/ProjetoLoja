@@ -51,19 +51,19 @@
     </header>
     
     <div class=""></div>
-    <nav class="flex bg-stone-800 w-[90%] h-12 mx-auto text-center justify-center sm:w-12 md:w-[60%] xl:w-[40%]  rounded mt-2 ">
+    <nav class="flex bg-stone-800 w-full  h-12 mx-auto text-center justify-center 2xl:w-[38%] md:w-[60%] xl:w-[40%] 2xl:relative 2xl:top-0 fixed bottom-0 2xl:rounded-md mt-2 z-[100000]">
       <ul class="flex scroll-smooth font-semibold text-lg xl:text-2xl gap-6 xl:gap-10 xl:font-medium ">
         <li class="mt-2 hover:border-b-2 hover:border-white ">
-          <a class="text-gray-400 hover:text-white" onclick="mostrarSecao('start')" href="#start" >Inicio</a>
+          <a class="text-gray-400 hover:text-white" href="#start" >Inicio</a>
         </li>
         <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" onclick="mostrarSecao('about')" href="#about">Sobre</a>
+          <a class="text-gray-400 hover:text-white" href="#about">Sobre</a>
         </li>
         <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" onclick="mostrarSecao('services')"" href="#services" >Serviços</a>
+          <a class="text-gray-400 hover:text-white" href="#services" >Serviços</a>
         </li>
         <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" onclick="mostrarSecao('login')" href="#login">Login</a>
+          <a class="text-gray-400 hover:text-white" href="#login">Login</a>
         </li>
       </ul>
     </nav>
@@ -149,9 +149,9 @@
     
 
     <!-- Inicio Login-->
-  <section class="bg-gray-50 dark:bg-gray-900 page-menu" id="login">
+  <section class="bg-gray-50 dark:bg-gray-900 page-menu hidden" id="login">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a href="login" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <a href="login" class="flex items-center mb-6 text-lg xl:text-3xl font-semibold uppercase text-gray-900 dark:text-white">
             <img class="w-16 h-16 mr-2" src="./assets/img-pressao.jpg" alt="logo">
             GL Estética Automotiva
         </a>
@@ -403,16 +403,16 @@
         <a href="https://wa.me/5527999231406" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl text-green-400"></i></a>
     </div>
   </div>
-  <div class=" text-center text-gray-300 h-2 mt-4 text-center justify-center border-gray-600 border-t-2">
+  <div class=" text-center text-gray-300 h-2 mt-4 mb-12 2xl:mb-0 text-center justify-center border-gray-600 border-t-2">
         <p class="copyright pt-3 pb-10"> Julioctenorio © 2024</p>
   </div>
           
           
       <!--Button Cart Footer-->
-  <footer class="w-full bg-red-500 text-center py-2 fixed bottom-0 z-40 flex items-center justify-center">
+  <footer class="2xl:w-full w-20 rounded-full bg-red-500 text-center py-2 fixed bottom-0 z-40 flex items-center justify-center bottom-14 right-1 2xl:bottom-0 2xl:right-0">
     <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
       (<span id="cart-count">0</span>)
-      Veja meu carrinho
+      <p class="hidden 2xl:flex">Veja meu carrinho</p>
       <i class="fa fa-cart-plus text-lg text-white"></i>
     </button>
   </footer>
