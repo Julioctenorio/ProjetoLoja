@@ -6,8 +6,6 @@ body {
   background-color: #f6f7f8;
 }
 
-<<<<<<< HEAD
-=======
 footer {
   position: relative;
   z-index: 10; /* Garanta que ele está em cima de outros elementos */
@@ -24,7 +22,6 @@ footer .w-full {
   z-index: 40;
 }
 
->>>>>>> main
 
 
 
