@@ -97,10 +97,8 @@ function addToCart(name, price) {
   if (existingItem) {
     //Se o item ja existe, aumenta apenas a quantidade + 1
     existingItem.quantity += 1;
+    navigator.vibrate(200)
     
-    if ('vibrate' in navigator) {
-      navigator.vibrate(100);
-    }
   } else {
     cart.push({
       name,
