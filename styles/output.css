@@ -2379,6 +2379,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -3503,6 +3508,14 @@ footer .w-full {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -3511,8 +3524,20 @@ footer .w-full {
     height: 100vh;
   }
 
-  .md\:w-\[60\%\] {
-    width: 60%;
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-\[96\] {
+    width: 96;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[35\%\] {
+    width: 35%;
   }
 
   .md\:min-w-\[600px\] {
@@ -3541,6 +3566,14 @@ footer .w-full {
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
+  .md\:rounded-md {
+    border-radius: 0.375rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3549,6 +3582,11 @@ footer .w-full {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -3627,12 +3665,8 @@ footer .w-full {
     top: 0px;
   }
 
-  .\32xl\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .\32xl\:mb-2 {
-    margin-bottom: 0.5rem;
+  .\32xl\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .\32xl\:flex {
@@ -3653,15 +3687,5 @@ footer .w-full {
 
   .\32xl\:rounded-none {
     border-radius: 0px;
-  }
-
-  .\32xl\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .\32xl\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 }
