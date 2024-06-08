@@ -22,7 +22,13 @@ footer .w-full {
   z-index: 40;
 }
 
+.shake{
+  transition: transform 0.3s;
+}
 
+.shake:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
 
 
   .accordion {

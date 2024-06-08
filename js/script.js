@@ -89,6 +89,17 @@ menu.addEventListener("click", function (event) {
   }
 })
 
+  // Função para tremer o botão
+function applyShake(element) {
+  // Adiciona a classe shake ao elemento clicado
+  element.classList.add('shake');
+
+  // Remove a classe shake após 1 segundo
+  setTimeout(() => {
+    element.classList.remove('shake');
+  }, 1000);
+}
+
 // Função para adicionar no carrinho
 function addToCart(name, price) {
 
@@ -98,18 +109,21 @@ function addToCart(name, price) {
     //Se o item ja existe, aumenta apenas a quantidade + 1
     existingItem.quantity += 1;
     navigator.vibrate(200)
-    
+    const addToCartButton = document.querySelector('.add-to-cart-button');
+    if (addToCartButton) {
+      applyShake(addToCartButton);
+    }
   } else {
     cart.push({
       name,
       price,
       quantity: 1
-    })
+    });
   }
 
-  updateCartModal()
-
+  updateCartModal();
 }
+
 
 // Atualiza o carrinho
 function updateCartModal() {
