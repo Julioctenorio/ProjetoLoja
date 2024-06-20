@@ -216,7 +216,7 @@ checkoutBtn.addEventListener('click', function () {
       position: "right", // `left`, `center` or `right`
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
-        background: "#ef4444)",
+        background: "#ef4444",
       },
       onClick: function () { } // Callback after click
     }).showToast();
@@ -225,6 +225,7 @@ checkoutBtn.addEventListener('click', function () {
   }
 
   if (cart.length === 0) return;
+  
   if (addressInput.value === '') {
     addressWarn.classList.remove('hidden')
     addressInput.classList.add('border-red-500')
@@ -235,14 +236,14 @@ checkoutBtn.addEventListener('click', function () {
   const cartItems = cart.map((item) => {
     return (
       `${item.name}\n Quantidade: (${item.quantity})\n Preço: R$${item.price} \n\n`
-        `${cart.total}` //verificar erro
+      `R$${cart.total}`
     )
-  }).join('')
+  }).join('') ; 
 
   const message = encodeURIComponent(cartItems);
   const phone = '+351911777657'
 
-  window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, '_blanck')
+  window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, '_blank')
 
 
   cart.length = 0;
@@ -263,9 +264,13 @@ const spanItem = document.getElementById('date-span')
 const isOpen = checkIsOpen()
 
 if (isOpen) {
-  spanItem.classList.remove('bg-red-500');
-  spanItem.classList.add('bg-green-600')
+  spanItem.classList.remove('border-red-500');
+  spanItem.classList.remove('text-red-500');
+  spanItem.classList.add('border-green-500');
+  spanItem.classList.add('text-green-500');
 } else {
-  spanItem.classList.remove('bg-green-600');
-  spanItem.classList.add('bg-red-500')
+  spanItem.classList.remove('border-green-600');
+  spanItem.classList.remove('text-green-600');
+  spanItem.classList.add('border-red-500');
+  spanItem.classList.add('text-red-500');
 }

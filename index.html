@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,7 @@
   <body>
     <!--Header-->
     <header class="w-full h-{420px} bg-zinc-900 bg-home bg-cover bg-center">
-      <div class="w-full h-full flex flex-col justify-center items-center">
+      <div class="w-full h-full flex flex-col justify-center items-center backdrop-brightness-25">
         <img
           src="./assets/logo.jpg"
           alt="Logo GL Estética Automotiva"
@@ -44,23 +44,23 @@
           >Rod Gov José Henrique Sette, 78 - Itacibá</span
         >
 
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5 mb-10" id="date-span">
-          <span class="text-white font-medium text-center">Seg à Sab - 10:00 as 20:00</span>
+        <div class="border-4 border-green-500 px-4 py-1 rounded-lg mt-5 mb-10 " id="date-span">
+          <span class="font-medium text-center">Seg à Sab - 10:00 as 20:00</span>
         </div>
       </div>
     </header>
     
-    <div class=""></div>
+    <div id="initial"></div>
     <nav class="flex bg-stone-800 w-full h-14 md:h-12 mx-auto text-center justify-center 2xl:w-[38%] md:w-96 md:relative md:rounded-md xl:w-[40%] 2xl:relative 2xl:top-0 fixed bottom-0 2xl:rounded-md mt-2 z-[100000]">
-      <ul class="flex scroll-smooth font-semibold text-lg xl:text-2xl gap-6 xl:gap-10 xl:font-medium uppercase">
-        <li class="mt-2 hover:border-b-2 hover:border-white ">
-          <a class="text-gray-400 hover:text-white" href="#start" >Inicio</a>
+      <ul class="flex font-semibold text-lg xl:text-2xl gap-6 xl:gap-10 xl:font-medium uppercase scroll-smooth">
+        <li class="mt-2 hover:border-b-2 hover:border-white">
+          <a class="text-gray-400 hover:text-white" href="#start">Inicio</a>
         </li>
         <li class="mt-2 hover:border-b-2 border-white">
           <a class="text-gray-400 hover:text-white" href="#about">Sobre</a>
         </li>
         <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" href="#services" >Serviços</a>
+          <a class="text-gray-400 hover:text-white" href="#services">Serviços</a>
         </li>
         <li class="mt-2 hover:border-b-2 border-white">
           <a class="text-gray-400 hover:text-white" href="#login">Login</a>
@@ -362,7 +362,7 @@
       
 
     <!--Modal Cart-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[9999999] items-center justify-center hidden" id="cart-modal">
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-5">Meu carrinho</h2>
 
