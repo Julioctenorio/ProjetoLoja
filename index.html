@@ -52,18 +52,19 @@
     
     <div id="initial"></div>
     <nav class="flex bg-stone-800 w-full h-14 md:h-12 mx-auto text-center justify-center 2xl:w-[38%] md:w-96 md:relative md:rounded-md xl:w-[40%] 2xl:relative 2xl:top-0 fixed bottom-0 2xl:rounded-md mt-2 z-[100000]">
-      <ul class="flex font-semibold text-lg xl:text-2xl gap-6 xl:gap-10 xl:font-medium uppercase scroll-smooth">
-        <li class="mt-2 hover:border-b-2 hover:border-white">
-          <a class="text-gray-400 hover:text-white" href="#start">Inicio</a>
+      <ul class="flex font-semibold text-lg xl:text-2xl gap-12 xl:gap-20 xl:font-medium uppercase scroll-smooth">
+        <li class="hover:border-b-2 hover:border-white">
+          <a class="text-gray-400 hover:text-white" href="#start"><i class="fa-solid fa-house fa-sm"></i><p class="text-gray-100 text-xs">Inicio</p></a>          
         </li>
-        <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" href="#about">Sobre</a>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#about"><i class="fa-solid fa-bars fa-sm"></i><p class="text-gray-100 text-xs">Sobre</p></a>
+          
         </li>
-        <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" href="#services">Serviços</a>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#services"><i class="fa-solid fa-shop fa-sm"></i></i><p class="text-gray-100 text-xs">Serviços</p></a>
         </li>
-        <li class="mt-2 hover:border-b-2 border-white">
-          <a class="text-gray-400 hover:text-white" href="#login">Login</a>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#login"><i class="fa-solid fa-circle-info fa-sm"></i><p class="text-gray-100 text-xs">Info</p></a>
         </li>
       </ul>
     </nav>
@@ -149,11 +150,11 @@
     
 
     <!-- Inicio Login-->
-  <section class="bg-gray-50 dark:bg-gray-900 page-menu hidden" id="login">
+  <section class="bg-gray-50 dark:bg-gray-900 page-menu hidden" id="services">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a href="login" class="flex items-center mb-6 text-lg xl:text-3xl font-semibold uppercase text-gray-900 dark:text-white">
-            <img class="w-16 h-16 mr-2" src="./assets/img-pressao.jpg" alt="logo">
-            GL Estética Automotiva
+        <a href="services" class="flex items-center mb-6 text-lg xl:text-3xl font-semibold uppercase text-gray-900 dark:text-white">
+          <p class="mr-4">GL Estética Automotiva</p> 
+          <i class="fa-solid fa-spray-can-sparkles fa-sm"></i>
         </a>
         <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -161,6 +162,7 @@
                     Faça login com sua conta
                 </h1>
                 <form class="space-y-4 md:space-y-6" action="#">
+
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seu email</label>
                         <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="seuemail@mail.com" required="">
@@ -181,7 +183,29 @@
                         <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Esqueceu a senha?</a>
                     </div>
                     <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Entrar</button>
-                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+
+                    <p class="text-center font-medium">Ou</p>
+                    
+                    <div class="w-full text-center justify-between" id="socialsLogin">
+                      <div class="">
+                        <a href="">
+                          <button type="submit" class="w-full flex gap-20 text-center my-auto hover:bg-slate-400 border-2 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"><i class="my-auto fa-brands fa-facebook fa-lg text-blue-500"></i> <p>Continuar com Facebook</p></button>
+                        </a>
+                      </div>
+                      <div>
+                        <div class="py-1">
+                          <button type="submit" class="w-full flex gap-20 text-center my-auto hover:bg-slate-400 border-2 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"><svg width="1em" data-e2e="" height="1em" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-auto"><path fill-rule="evenodd" clip-rule="evenodd" d="M43 24.4313C43 23.084 42.8767 21.7885 42.6475 20.5449H24.3877V27.8945H34.8219C34.3724 30.2695 33.0065 32.2818 30.9532 33.6291V38.3964H37.2189C40.885 35.0886 43 30.2177 43 24.4313Z" fill="#4285F4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.3872 43.001C29.6219 43.001 34.0107 41.2996 37.2184 38.3978L30.9527 33.6305C29.2165 34.7705 26.9958 35.4441 24.3872 35.4441C19.3375 35.4441 15.0633 32.1018 13.5388 27.6108H7.06152V32.5337C10.2517 38.7433 16.8082 43.001 24.3872 43.001Z" fill="#34A853"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5395 27.6094C13.1516 26.4695 12.9313 25.2517 12.9313 23.9994C12.9313 22.7472 13.1516 21.5295 13.5395 20.3894V15.4668H7.06217C5.74911 18.0318 5 20.9336 5 23.9994C5 27.0654 5.74911 29.9673 7.06217 32.5323L13.5395 27.6094Z" fill="#FBBC04"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.3872 12.5568C27.2336 12.5568 29.7894 13.5155 31.7987 15.3982L37.3595 9.94866C34.0018 6.88281 29.6131 5 24.3872 5C16.8082 5 10.2517 9.25777 7.06152 15.4674L13.5388 20.39C15.0633 15.8991 19.3375 12.5568 24.3872 12.5568Z" fill="#EA4335"></path></svg> <p>Continuar com Google</p></button>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="">
+                        <a href="">
+                          <button type="submit" class="w-full flex gap-20 text-center my-auto hover:bg-slate-400 border-2 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"><i class="my-auto fa-brands fa-apple fa-xl"></i> <p>Continuar com Apple</p></button>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <p class="text-sm font-light text-gray-500 dark:text-gray-400 text-center border-t-2">
                         Ainda não é inscrito? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Criar conta</a>
                     </p>
                 </form>
@@ -202,164 +226,9 @@
 
     <!--Inicio menu-->
     <div id="menu">
-
-      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-      
-      <!--Produto 1-->
-      <div class="flex gap-2">
-        <img src="./assets/card5.avif" alt="Lavagem Simples" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Lavagem Simples</p>
-          <p class="text-sm text-gray-800">Lavagem externa, aspiração interna e detalhes nas rodas para um carro fresco e limpo.</p>
-      
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
-            <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lavagem Simples" data-price="29.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--Fim produto-->
-
-      <!--Produto 2-->
-      <div class="flex gap-2">
-        <img src="./assets/card3.jpg" alt="Lavagem Detalhada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Lavagem Detalhada</p>
-          <p class="text-sm text-gray-800">Lavagem externa detalhada com cera para proteção e brilho duradouro, limpeza interna minuciosa com aromatização.</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 35.90</p>
-            <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lavagem Detalhada" data-price="35.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--Fim produto-->
-
-      <!--Produto 3-->
-      <div class="flex gap-2">
-        <img src="./assets/card1.jpg" alt="Higienização Detalhada (Vip)" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Higienização Detalhada (Vip)</p>
-          <p class="text-sm text-gray-800">Aspiração, limpeza de superfícies e aromatização para um interior fresco.</p>
-
-            <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 25.90</p>
-            <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Higienização Detalhada (Vip)" data-price="25.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--Fim produto-->
-
-      <!--Produto 4-->
-      <div class="flex gap-2">
-        <img src="./assets/card6.avif" alt="Higienização de Motor" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Higienização de Motor</p>
-          <p class="text-sm text-gray-800">Remoção de sujeira, graxa e detritos do motor para manter seu funcionamento suave e prolongar sua vida útil.</p>
-          
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 49.90</p>
-            <button 
-            class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Higienização de Motor" data-price="49.90">
-            <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--Fim produto-->
-    
-      <!--Produto 5-->
-      <div class="flex gap-2">
-        <img src="./assets/card4.jpg" alt="Limpeza de Estofado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Limpeza de Estofado</p>
-          <p class="text-sm text-gray-800">Remoção de sujeira e manchas, aplicação de produto de limpeza especializado e aspiração para restaurar a aparência e frescor.</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
-            <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Limpeza de Estofado" data-price="29.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--Fim produto-->
-
-      <!--Produto 6-->
-      <div class="flex gap-2">
-        <img src="./assets/card7.avif" alt="Limpeza e Hidratação de Couro" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Limpeza e Hidratação de Couro</p>
-          <p class="text-sm text-gray-800">Remoção de sujeira e aplicação de condicionador especial para manter o couro macio e protegido.</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 35.90</p>
-            <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Limpeza e Hidratação de Couro" data-price="35.90" >
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!--Fim produto-->
-    </main>
-
-    <div class="mx-auto max-w-7xl my-2">
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 uppercase mt-9 mb-6">
-        Outros serviços
-      </h2>
     </div>
-
-    <!--Grid Bebidas-->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-      <div class="flex gap-2">
-        <img src="./assets/card8.jpg" alt="Polimento" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Polimento</p>
-          <p class="text-sm text-gray-800">Dê vida nova ao seu carro! Nosso polimento profissional remove arranhões e traz de volta o brilho original da pintura. Faça seu carro brilhar como novo!</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 49.90</p>
-            <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Polimento" data-price="49.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-between gap-2">
-        <img src="./assets/card9.jpg" alt="Troca de Filtro e Higienização de Ar Condicionado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        <div>
-          <p class="font-bold text-gray-900">Troca de Filtro e Higienização de Ar Condicionado</p>
-          <p class="text-sm text-gray-800">Renove o ar do seu carro! Com a troca de filtro e higienização de ar condicionado, você terá um ambiente fresco e limpo sempre que dirigir. Proteja sua saúde e agende já o serviço!</p>
-          
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
-            <button 
-            class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Troca de Filtro e Higienização de Ar Condicionado" data-price="29.90">
-            <i class="fa fa-cart-plus text-lg text-white"></i>
-          </button>
-        </div>
-        </div>
-      </div>
-    </div>
-    
-    <!--Fim Grid Bebidas-->
     <!--Fim menu-->
 
-    
-      
 
     <!--Modal Cart-->
     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[9999999] items-center justify-center hidden" id="cart-modal">

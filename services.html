@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/./output.css" />
+    <script src="https://kit.fontawesome.com/7480448000.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="./js/script.js" defer></script>
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GL - O melhor lava jato da cidade">
+    <meta property="og:image" content="https://projeto-loja-phi.vercel.app/assets/hamb-1.png">
+    <meta property="og:description" content="O melhor lava jato da cidade">
+    <meta property="og:site_name" content="GL Estética Automotiva">
+
+    <title>GL - O melhor lava jato da cidade</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="w-full h-{420px} bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center backdrop-brightness-25">
+        <img
+          src="./assets/logo.jpg"
+          alt="Logo GL Estética Automotiva"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 mt-7"
+        />
+
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white text-center">GL ESTÉTICA AUTOMOTIVA</h1>
+
+        <span class="text-white font-medium"
+          >Rod Gov José Henrique Sette, 78 - Itacibá</span
+        >
+
+        <div class="border-4 border-green-500 px-4 py-1 rounded-lg mt-5 mb-10 " id="date-span">
+          <span class="font-medium text-center">Seg à Sab - 10:00 as 20:00</span>
+        </div>
+      </div>
+    </header>
+    
+    <div id="initial"></div>
+    <nav class="flex bg-stone-800 w-full h-14 md:h-12 mx-auto text-center justify-center 2xl:w-[38%] md:w-96 md:relative md:rounded-md xl:w-[40%] 2xl:relative 2xl:top-0 fixed bottom-0 2xl:rounded-md mt-2 z-[100000]">
+      <ul class="flex font-semibold text-lg xl:text-2xl gap-12 xl:gap-20 xl:font-medium uppercase scroll-smooth">
+        <li class="hover:border-b-2 hover:border-white">
+          <a class="text-gray-400 hover:text-white" href="#start"><i class="fa-solid fa-house fa-sm"></i><p class="text-gray-100 text-xs">Inicio</p></a>          
+        </li>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#about"><i class="fa-solid fa-bars fa-sm"></i><p class="text-gray-100 text-xs">Sobre</p></a>
+          
+        </li>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#services"><i class="fa-solid fa-shop fa-sm"></i></i><p class="text-gray-100 text-xs">Serviços</p></a>
+        </li>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#login"><i class="fa-solid fa-circle-info fa-sm"></i><p class="text-gray-100 text-xs">Info</p></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Serviços-->
+    <div id="services" class="page-menu hidden">
+    <!--Fim do Header-->
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 uppercase text-center mt-9 mb-6 border-b-2">
+      Conheça nossos serviços
+    </h2>
+
+    <!--Inicio menu-->
+    <div id="menu">
+
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      
+      <!--Produto 1-->
+      <div class="flex gap-2">
+        <img src="./assets/card5.avif" alt="Lavagem Simples" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Lavagem Simples</p>
+          <p class="text-sm text-gray-800">Lavagem externa, aspiração interna e detalhes nas rodas para um carro fresco e limpo.</p>
+      
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lavagem Simples" data-price="29.90">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Fim produto-->
+
+      <!--Produto 2-->
+      <div class="flex gap-2">
+        <img src="./assets/card3.jpg" alt="Lavagem Detalhada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Lavagem Detalhada</p>
+          <p class="text-sm text-gray-800">Lavagem externa detalhada com cera para proteção e brilho duradouro, limpeza interna minuciosa com aromatização.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 35.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lavagem Detalhada" data-price="35.90">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Fim produto-->
+
+      <!--Produto 3-->
+      <div class="flex gap-2">
+        <img src="./assets/card1.jpg" alt="Higienização Detalhada (Vip)" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Higienização Detalhada (Vip)</p>
+          <p class="text-sm text-gray-800">Aspiração, limpeza de superfícies e aromatização para um interior fresco.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 25.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Higienização Detalhada (Vip)" data-price="25.90">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Fim produto-->
+
+      <!--Produto 4-->
+      <div class="flex gap-2">
+        <img src="./assets/card6.avif" alt="Higienização de Motor" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Higienização de Motor</p>
+          <p class="text-sm text-gray-800">Remoção de sujeira, graxa e detritos do motor para manter seu funcionamento suave e prolongar sua vida útil.</p>
+          
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 49.90</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Higienização de Motor" data-price="49.90">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Fim produto-->
+    
+      <!--Produto 5-->
+      <div class="flex gap-2">
+        <img src="./assets/card4.jpg" alt="Limpeza de Estofado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Limpeza de Estofado</p>
+          <p class="text-sm text-gray-800">Remoção de sujeira e manchas, aplicação de produto de limpeza especializado e aspiração para restaurar a aparência e frescor.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Limpeza de Estofado" data-price="29.90">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Fim produto-->
+
+      <!--Produto 6-->
+      <div class="flex gap-2">
+        <img src="./assets/card7.avif" alt="Limpeza e Hidratação de Couro" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Limpeza e Hidratação de Couro</p>
+          <p class="text-sm text-gray-800">Remoção de sujeira e aplicação de condicionador especial para manter o couro macio e protegido.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 35.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Limpeza e Hidratação de Couro" data-price="35.90" >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Fim produto-->
+    </main>
+
+    <div class="mx-auto max-w-7xl my-2">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 uppercase mt-9 mb-6">
+        Outros serviços
+      </h2>
+    </div>
+
+    <!--Grid Bebidas-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      <div class="flex gap-2">
+        <img src="./assets/card8.jpg" alt="Polimento" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Polimento</p>
+          <p class="text-sm text-gray-800">Dê vida nova ao seu carro! Nosso polimento profissional remove arranhões e traz de volta o brilho original da pintura. Faça seu carro brilhar como novo!</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 49.90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Polimento" data-price="49.90">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between gap-2">
+        <img src="./assets/card9.jpg" alt="Troca de Filtro e Higienização de Ar Condicionado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold text-gray-900">Troca de Filtro e Higienização de Ar Condicionado</p>
+          <p class="text-sm text-gray-800">Renove o ar do seu carro! Com a troca de filtro e higienização de ar condicionado, você terá um ambiente fresco e limpo sempre que dirigir. Proteja sua saúde e agende já o serviço!</p>
+          
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Troca de Filtro e Higienização de Ar Condicionado" data-price="29.90">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Fim Grid Bebidas-->
+    <!--Fim menu-->
+
+    
+      
+
+    <!--Modal Cart-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[9999999] items-center justify-center hidden" id="cart-modal">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-5">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de entrega</p>
+        <input 
+        type="text" 
+        placeholder="Digite seu endereço completo..." 
+        class="w-full border-2 p-1 rounded my-1" 
+        id="address">
+        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn">Fechar</button>
+          <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+        </div>
+
+      </div>
+      
+    </div>
+    <!--Fim Modal Cart-->
+    </div>
+  </div>
+
+  <div class="pb-8 items-center text-center bg-stone-700 text-gray-300 text-xs">
+    <div class="grid gap-4 text-center text-gray-300 h-18 text-center justify-center">
+      <h2 class="mt-4">Siga-nos</h2>
+      
+      <div class="flex items-center justify-center gap-4 mb-4 ">
+          
+        <a href="https://www.facebook.com/luhan.costa" target="_blank"><i class="fa-brands fa-facebook fa-2xl text-blue-800"></i></a>
+          
+        <a href="https://www.instagram.com/gl_esteticaautomotivaa" target="_blank"><i class="fa-brands fa-instagram fa-2xl text-pink-600"></i></a>
+          
+        <a href="https://wa.me/5527999231406" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl text-green-400"></i></a>
+    </div>
+  </div>
+  <div class=" text-center text-gray-300 h-2 mt-4 mb-12 md:mb-2 2xl:mb-8 text-center justify-center border-gray-600 border-t-2">
+        <p class="copyright pt-3 pb-10 md:pb-0"> Julioctenorio © 2024</p>
+  </div>
+          
+          
+      <!--Button Cart Footer-->
+  <footer class="2xl:w-full w-20 rounded-full 2xl:rounded-none bg-red-500 text-center py-2 fixed bottom-0 z-40 flex items-center justify-center bottom-14 right-1 2xl:bottom-0 2xl:right-0">
+    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+      (<span id="cart-count">0</span>)
+      <p class="hidden 2xl:flex">Veja meu carrinho</p>
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+<!--Fim Button Cart Footer-->
+  
+  </body>
+</html>

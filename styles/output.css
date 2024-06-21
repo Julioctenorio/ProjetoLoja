@@ -772,6 +772,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -808,8 +813,8 @@ video {
   margin-left: 0.75rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .mt-2 {
@@ -834,6 +839,18 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .box-border {
@@ -939,10 +956,6 @@ video {
   height: 3.5rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-2 {
   height: 0.5rem;
 }
@@ -965,10 +978,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-20 {
@@ -1001,6 +1010,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .min-w-\[90\%\] {
@@ -1533,16 +1546,20 @@ video {
   justify-items: stretch;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-20 {
+  gap: 5rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-7 {
@@ -1551,6 +1568,14 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2327,6 +2352,10 @@ video {
   padding-top: 0.75rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2517,6 +2546,11 @@ video {
 .text-blue-800 {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -3361,6 +3395,11 @@ footer .w-full {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-slate-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3634,8 +3673,8 @@ footer .w-full {
     width: 40%;
   }
 
-  .xl\:gap-10 {
-    gap: 2.5rem;
+  .xl\:gap-20 {
+    gap: 5rem;
   }
 
   .xl\:p-0 {
