@@ -91,7 +91,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lavagem Simples" data-price="29.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Lavagem Simples" data-name="Lavagem Simples" data-price="29.90">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -109,7 +109,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 35.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Lavagem Detalhada" data-price="35.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Lavagem Detalhada" data-name="Lavagem Detalhada" data-price="35.90">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -127,7 +127,7 @@
             <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 25.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Higienização Detalhada (Vip)" data-price="25.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Higienização Detalhada" data-name="Higienização Detalhada (Vip)" data-price="25.90">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -145,7 +145,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 49.90</p>
             <button 
-            class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Higienização de Motor" data-price="49.90">
+            class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Higienização de Motor" data-name="Higienização de Motor" data-price="49.90">
             <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -163,7 +163,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Limpeza de Estofado" data-price="29.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Limpeza de Estofado" data-name="Limpeza de Estofado" data-price="29.90">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -181,7 +181,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 35.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Limpeza e Hidratação de Couro" data-price="35.90" >
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Limpeza e Hidratação de Couro" data-name="Limpeza e Hidratação de Couro" data-price="35.90" >
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -207,7 +207,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 49.90</p>
             <button 
-              class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Polimento" data-price="49.90">
+              class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Polimento data-name="Polimento" data-price="49.90">
               <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
           </div>
@@ -223,7 +223,7 @@
           <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-gray-900 text-lg">R$ 29.90</p>
             <button 
-            class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Troca de Filtro e Higienização de Ar Condicionado" data-price="29.90">
+            class="bg-gray-900 px-5 rounded add-to-cart-btn" aria-label="Troca de Filtro e Higienização de Ar Condicionado" data-name="Troca de Filtro e Higienização de Ar Condicionado" data-price="29.90">
             <i class="fa fa-cart-plus text-lg text-white"></i>
           </button>
         </div>
@@ -234,7 +234,7 @@
     <!--Fim Grid Bebidas-->
     <!--Fim menu-->
 
-    
+    <div id="address"></div>
       
 
     <!--Modal Cart-->
@@ -251,6 +251,7 @@
         <input 
         type="date" 
         placeholder="data do agendamento" 
+<<<<<<< HEAD
         class="w-full border-2 p-1 rounded my-1" 
         id="address">
 
@@ -258,13 +259,27 @@
         <input 
         type="time" 
         placeholder="data do agendamento" 
+=======
+>>>>>>> main
         class="w-full border-2 p-1 rounded my-1" 
-        id="address">
+        id="date-scheduling">
+
+        <p class="font-medium mt-2">Hora</p>
+        <input 
+        type="time" 
+        placeholder="data do agendamento" 
+        class="w-full border-2 p-1 rounded my-1" 
+        id="time-scheduling">
         <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
 
         <div class="flex items-center justify-between mt-5 w-full">
+<<<<<<< HEAD
           <button id="close-modal-btn">Fechar</button>
           <button id="checkout-btn" class="bg-green-500 hover:bg-green-700 transition-all hover:transition text-white px-4 py-1 rounded">Finalizar pedido</button>
+=======
+          <button id="close-modal-btn" >Fechar</button>
+          <button id="checkout-btn" class="bg-green-500 hover:bg-green-700 transition-all hover:transition text-white px-4 py-1 rounded" >Finalizar pedido</button>
+>>>>>>> main
         </div>
 
       </div>
@@ -275,25 +290,25 @@
   </div>
 
   <div class="pb-8 items-center text-center bg-stone-700 text-gray-300 text-xs">
-    <div class="grid gap-4 text-center text-gray-300 h-18 text-center justify-center">
+    <div class="grid gap-4 text-center text-gray-300 h-18 justify-center">
       <h2 class="mt-4">Siga-nos</h2>
       
       <div class="flex items-center justify-center gap-4 mb-4 ">
           
-        <a href="https://www.facebook.com/luhan.costa" target="_blank"><i class="fa-brands fa-facebook fa-2xl text-blue-800"></i></a>
+        <a href="https://www.facebook.com/luhan.costa" rel="noopener" target="_blank" aria-label="facebook" ><i class="fa-brands fa-facebook fa-2xl text-blue-800"></i></a>
           
-        <a href="https://www.instagram.com/gl_esteticaautomotivaa" target="_blank"><i class="fa-brands fa-instagram fa-2xl text-pink-600"></i></a>
+        <a href="https://www.instagram.com/gl_esteticaautomotivaa" rel="noopener" target="_blank" aria-label="instagram" ><i class="fa-brands fa-instagram fa-2xl text-pink-600"></i></a>
           
-        <a href="https://wa.me/5527999231406" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl text-green-400"></i></a>
+        <a href="https://wa.me/5527999231406" rel="noopener" target="_blank" aria-label="whatsapp"><i class="fa-brands fa-whatsapp fa-2xl text-green-400"></i></a>
     </div>
   </div>
-  <div class=" text-center text-gray-300 h-2 mt-4 mb-12 md:mb-2 2xl:mb-8 text-center justify-center border-gray-600 border-t-2">
+  <div class=" text-center text-gray-300 h-2 mt-4 mb-12 md:mb-2 2xl:mb-8 justify-center border-gray-600 border-t-2">
         <p class="copyright pt-3 pb-10 md:pb-0"> Julioctenorio © 2024</p>
   </div>
           
           
       <!--Button Cart Footer-->
-  <footer class="2xl:w-full w-20 rounded-full 2xl:rounded-none bg-red-500 text-center py-2 fixed bottom-0 z-40 flex items-center justify-center bottom-14 right-1 2xl:bottom-0 2xl:right-0">
+      <footer class="2xl:w-full w-20 rounded-full 2xl:rounded-none bg-red-500 text-center py-2 fixed z-40 flex items-center justify-center bottom-14 right-1 2xl:bottom-0 2xl:right-0">
     <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
       (<span id="cart-count">0</span>)
       <p class="hidden 2xl:flex">Veja meu carrinho</p>

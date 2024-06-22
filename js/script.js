@@ -8,6 +8,8 @@ const closeModalBtn = document.getElementById("close-modal-btn");
 const checkoutBtn = document.getElementById("checkout-btn");
 const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
+const dateScheduling = document.getElementById("date-scheduling")
+const timeScheduling = document.getElementById("time-scheduling")
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll('.nav-item')
 
@@ -15,25 +17,25 @@ let cart = [];
 
 // Menu
 // Função para exibir apenas a seção "Início"
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const menuLinks = document.querySelectorAll('nav ul li a');
 
-  menuLinks.forEach(function(menuLink) {
-      menuLink.addEventListener('click', function(event) {
-          event.preventDefault();
+  menuLinks.forEach(function (menuLink) {
+    menuLink.addEventListener('click', function (event) {
+      event.preventDefault();
 
-          const targetId = this.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
 
-          if (targetSection) {
-              const allSections = document.querySelectorAll('.page-menu');
-              allSections.forEach(function(section) {
-                  section.classList.add('hidden');
-              });
+      if (targetSection) {
+        const allSections = document.querySelectorAll('.page-menu');
+        allSections.forEach(function (section) {
+          section.classList.add('hidden');
+        });
 
-              targetSection.classList.remove('hidden');
-          }
-      });
+        targetSection.classList.remove('hidden');
+      }
+    });
   });
 });
 
@@ -41,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function mostrarSecao(id) {
   // Seleciona todas as seções
   var secoes = document.querySelectorAll('.page-menu');
-  
+
   // Percorre todas as seções
-  secoes.forEach(function(secao) {
+  secoes.forEach(function (secao) {
     // Verifica se o ID da seção é igual ao ID passado como argumento
     if (secao.id === id) {
       // Se for igual, mostra a seção
@@ -89,7 +91,7 @@ menu.addEventListener("click", function (event) {
   }
 })
 
-  // Função para tremer o botão
+// Função para tremer o botão
 function applyShake(element) {
   // Adiciona a classe shake ao elemento clicado
   element.classList.add('shake');
@@ -225,25 +227,59 @@ checkoutBtn.addEventListener('click', function () {
   }
 
   if (cart.length === 0) return;
-  
+
   if (addressInput.value === '') {
     addressWarn.classList.remove('hidden')
     addressInput.classList.add('border-red-500')
     return
   }
 
-  //Enviar pedido para api whats
+  const dateInput = document.querySelector('input[type="date"]');
+  const timeInput = document.querySelector('input[type="time"]');
+  const date = dateInput.value;
+  const time = timeInput.value;
+
+  // Função para formatar a data
+  function formatDate(date) {
+    const [year, month, day] = date.split('-');
+    return `${day}/${month}/${year}`;
+  }
+
+  // Obter a data atual no formato yyyy-mm-dd
+  const today = new Date().toISOString().split('T')[0];
+
+  // Verificar se a data selecionada é anterior à data atual
+  if (date < today) {
+    alert("Não é possível selecionar uma data anterior à atual.");
+    return;
+  }
+
+  // Função para calcular o total do carrinho
+  const calculateCartTotal = (cart) => {
+    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+  };
+
+  // Calcula o total do carrinho
+  const cartTotal = calculateCartTotal(cart).toFixed(2);
+
+  // Construir a mensagem dos itens do carrinho
   const cartItems = cart.map((item) => {
     return (
       `${item.name}\n Quantidade: (${item.quantity})\n Preço: R$${item.price} \n\n`
-      `R$${cart.total}`
-    )
-  }).join('') ; 
+    );
+  }).join('');
 
-  const message = encodeURIComponent(cartItems);
+  // Mensagem completa
+  const finalMessage =
+    `>> NOVO AGENDAMENTO << \n` +
+    `Data: ${date}\n Hora: (${time})\n\n` +
+    cartItems +
+    `Total: R$${cartTotal}`;
+
+  const message = encodeURIComponent(finalMessage);
   const phone = '+351911777657'
 
-  window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, '_blank')
+  window.open(`https://wa.me/${phone}?text=${message}`, '_blank')
 
 
   cart.length = 0;
@@ -255,7 +291,7 @@ checkoutBtn.addEventListener('click', function () {
 function checkIsOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 10 && hora < 20;
+  return hora >= 0 && hora < 20;
   //true = restaurante esta aberto
 }
 
