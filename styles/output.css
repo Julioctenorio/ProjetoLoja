@@ -3406,14 +3406,6 @@ footer .w-full {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-.hover\:bg-green-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
-}
-
-=======
->>>>>>> main
 .hover\:font-bold:hover {
   font-weight: 700;
 }

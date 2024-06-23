@@ -218,7 +218,7 @@ checkoutBtn.addEventListener('click', function () {
       position: "right", // `left`, `center` or `right`
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
-        background: "#ef4444",
+      background: "#ef4444",
       },
       onClick: function () { } // Callback after click
     }).showToast();
@@ -291,7 +291,7 @@ checkoutBtn.addEventListener('click', function () {
 function checkIsOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 0 && hora < 20;
+  return hora >= 10 && hora < 20;
   //true = restaurante esta aberto
 }
 
