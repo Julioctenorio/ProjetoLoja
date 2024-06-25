@@ -3600,8 +3600,16 @@ footer .w-full {
     height: 3rem;
   }
 
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:w-96 {
@@ -3654,6 +3662,10 @@ footer .w-full {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-2\/4 {
+    width: 50%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3743,6 +3755,10 @@ footer .w-full {
 
   .\32xl\:flex {
     display: flex;
+  }
+
+  .\32xl\:w-2\/5 {
+    width: 40%;
   }
 
   .\32xl\:w-\[38\%\] {
