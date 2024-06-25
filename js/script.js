@@ -272,7 +272,7 @@ checkoutBtn.addEventListener('click', function () {
   // Mensagem completa
   const finalMessage =
     `>> NOVO AGENDAMENTO << \n` +
-    `Data: ${date}\n Hora: (${time})\n\n` +
+    ` Data: ${date}\n Hora: (${time})\n\n` +
     cartItems +
     `Total: R$${cartTotal}`;
 
@@ -291,7 +291,7 @@ checkoutBtn.addEventListener('click', function () {
 function checkIsOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 0 && hora < 20;
+  return hora >= 10 && hora < 20;
   //true = restaurante esta aberto
 }
 
