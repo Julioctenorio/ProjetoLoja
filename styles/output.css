@@ -2612,9 +2612,24 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3375,6 +3390,10 @@ footer .w-full {
   }
 }
 
+.hover\:hidden:hover {
+  display: none;
+}
+
 .hover\:-rotate-2:hover {
   --tw-rotate: -2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3409,6 +3428,10 @@ footer .w-full {
 .hover\:bg-primary-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-home:hover {
+  background-image: url('/assets/bg1.jpeg');
 }
 
 .hover\:font-bold:hover {
@@ -3474,6 +3497,16 @@ footer .w-full {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.active\:-rotate-2:active {
+  --tw-rotate: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.active\:scale-x-110:active {
+  --tw-scale-x: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .dark\:border:is(.dark *) {
@@ -3601,10 +3634,6 @@ footer .w-full {
     margin-top: 0px;
   }
 
-  .md\:h-12 {
-    height: 3rem;
-  }
-
   .md\:h-14 {
     height: 3.5rem;
   }
@@ -3615,10 +3644,6 @@ footer .w-full {
 
   .md\:w-3\/5 {
     width: 60%;
-  }
-
-  .md\:w-96 {
-    width: 24rem;
   }
 
   .md\:min-w-\[600px\] {
@@ -3764,10 +3789,6 @@ footer .w-full {
 
   .\32xl\:w-2\/5 {
     width: 40%;
-  }
-
-  .\32xl\:w-\[38\%\] {
-    width: 38%;
   }
 
   .\32xl\:w-full {
