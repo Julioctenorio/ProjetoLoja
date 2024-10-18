@@ -272,7 +272,7 @@ checkoutBtn.addEventListener('click', function () {
   // Mensagem completa
   const finalMessage =
     `>> NOVO AGENDAMENTO << \n` +
-    `Data: ${date}\n Hora: (${time})\n\n` +
+    ` Data: ${date}\n Hora: (${time})\n\n` +
     cartItems +
     `Total: R$${cartTotal}`;
 
