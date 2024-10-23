@@ -22,23 +22,98 @@ footer .w-full {
   z-index: 40;
 }
 
-.shake{
-  transition: transform 0.3s;
+/*cards do sobre*/
+.card{
+  width: 23rem;
+  aspect-ratio: 1 / 0.7;
+  border-radius: .5rem;
+  position: relative;
+  cursor: pointer;
 }
 
-.shake:hover {
-  transform: scale(1.1) rotate(-2deg);
+.card .image-box{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
 }
 
-  .accordion {
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    height: 30rem;
-    gap: 0.1rem;
-    transition: 0.3s;
-  }
+.card .image-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img{
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after{
+  opacity: 1;
+  inset: 20px;
+}
+
+.content{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h3, .content p{
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+  color: #d1d1d1;
+}
+
+.content h3{
+  margin-bottom: 12px;
+  scale: 0.7;
+  font-size: .85rem;
+}
+
+.content p{
+  font-size: .63rem;
+  line-height: 1.2;
+  transform: translateY(50%);
+}
+
+.card:hover .content h3 {
+  scale: 1;
+  opacity: 1;
+}
+
+.card:hover .content p{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.accordion {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 30rem;
+  gap: 0.1rem;
+  transition: 0.3s;
+}
 
   .accordion:hover {
     gap: 0;
@@ -125,6 +200,26 @@ footer .w-full {
 
 
 @media (min-width: 768px) {
+
+  .card{
+    width: 35rem;
+  }
+
+  .content{
+    width: 80%;
+  }
+
+  .content h3{
+  font-size: 1.5rem;
+}
+
+.content p{
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
   .accordion {
     width: 100%;
     display: flex;
