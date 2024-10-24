@@ -13,11 +13,12 @@
       rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/./output.css" />
-    <script src="https://kit.fontawesome.com/7480448000.js" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0/dist/js/index.min.js"></script>
+      <link rel="stylesheet" href="./styles/./output.css" />
+      
+      <script src="https://kit.fontawesome.com/7480448000.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0/dist/js/index.min.js"></script>
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js" defer></script>
 
     <script src="./js/script.js" defer></script>
 
@@ -80,231 +81,144 @@
           <p class="font-light md:text-2xl lg:text-2xl xl:text-3xl text-gray-800">GL ESTÉTICA AUTOMOTIVA presta serviço de lavagem e tratamento automóvel. Temos uma tabela de serviços diversificada que vai de encontro com o que procura e valoriza. Entre em contato conosco.</p>
         </div>
         <div>
-          <img src="./assets/card3.jpg" alt="">
+          <img class="rounded-md" src="./assets/card3.jpg" alt="">
         </div>  
       </div>
+      
 
       <!-- Slides -->
-<!--
-      <div
-  id="carouselExampleCrossfade"
-  class="relative"
-  data-twe-carousel-init
-  data-twe-ride="carousel">
-  //Carousel indicators//
-  <div
-    class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-    data-twe-carousel-indicators>
-    <button
-      type="button"
-      data-twe-target="#carouselExampleCrossfade"
-      data-twe-slide-to="0"
-      data-twe-carousel-active
-      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      aria-current="true"
-      aria-label="Slide 1"></button>
-    <button
-      type="button"
-      data-twe-target="#carouselExampleCrossfade"
-      data-twe-slide-to="1"
-      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      aria-label="Slide 2"></button>
-    <button
-      type="button"
-      data-twe-target="#carouselExampleCrossfade"
-      data-twe-slide-to="2"
-      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      aria-label="Slide 3"></button>
-  </div>
-
-  //Carousel items//
-  <div
-    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-    //First item//
-    <div
-      class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[300ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item
-      data-twe-carousel-active>
-      <img
-        src="./assets/card1.jpg"
-        class="block w-full"
-        alt="sobre card 1" />
-    </div>
-    //Second item//
-    <div
-      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[300ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item>
-      <img
-        src="./assets/card2.jpg"
-        class="block w-full"
-        alt="sobre card 2" />
-    </div>
-    //Third item//
-    <div
-      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[300ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item>
-      <img
-        src="./assets/card3.jpg"
-        class="block w-full"
-        alt="sobre card 3" />
-    </div>
-  </div>
-
-  //Carousel controls - prev item//
-  <button
-    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-    type="button"
-    data-twe-target="#carouselExampleCrossfade"
-    data-twe-slide="prev">
-    <span class="inline-block h-8 w-8">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="h-6 w-6">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M15.75 19.5L8.25 12l7.5-7.5" />
-      </svg>
-    </span>
-    <span
-      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-      >Previous</span
-    >
-  </button>
-  //Carousel controls - next item//
-  <button
-    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-    type="button"
-    data-twe-target="#carouselExampleCrossfade"
-    data-twe-slide="next">
-    <span class="inline-block h-8 w-8">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="h-6 w-6">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-      </svg>
-    </span>
-    <span
-      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-      >Next</span
-    >
-  </button>
-</div>
--->
-
-
+      
       <div class="about-services">
-        <h2 class="text-lg xl:text-2xl md:text-3xl font-bold text-center mt-2 mb-7 xl:mb-10 uppercase">Nossos Serviços</h2>
-      <ul class="accordion">
-        <li>
-          <img src="./assets/img1.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Limpeza Especializada</h2>
-              <p>Lavegem VIP</p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <img src="./assets/card1.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Interior</h2>
-              <p>Tratamento Personalizado</p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <img src="./assets/img2.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Bancos</h2>
-              <p>Tratamento e Renovação</p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <img src="./assets/card2.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Brilho</h2>
-              <p>Cera</p>
-            </span>
-          </div>
-        </li>
-      </ul>
+        <h2 class="text-lg xl:text-3xl md:text-3xl font-bold text-center mt-2 mb-7 xl:mb-8 uppercase">Nossos Serviços</h2>
+        <div class="relative w-full max-w-4xl mx-auto">
+      <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative rounded-lg">
+        <div
+          class="flex transition-transform duration-500 ease-in-out transform"
+          id="carousel">
+        <!-- Slide 1 -->
+        <div class="min-w-full">
+          <p class="absolute z-10 text-gray-200 pl-10 bottom-10 underline opacity-75">serviços</p>
+          <p class="absolute z-10 text-gray-200 pl-10 bottom-6 text-sm opacity-75">serviços de qualidade </p>
+          <img
+            src="./assets/card1.jpg"
+            alt="Slide 1"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Slide 2 -->
+        <div class="min-w-full">
+          <p class="absolute z-10 text-gray-800 pl-[49rem] bottom-10 underline opacity-75">serviços</p>
+          <p class="absolute z-10 text-gray-800 pl-[49rem] bottom-6 text-sm opacity-75">serviços de qualidade </p>
+          <img
+            src="./assets/card2.jpg"
+            alt="Slide 2"
+            class="w-full h-full object-cover" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="min-w-full">
+          <p class="absolute z-10 text-gray-200 pl-10 bottom-10 underline opacity-75">serviços</p>
+          <p class="absolute z-10 text-gray-200 pl-10 bottom-6 text-sm opacity-75">serviços de qualidade </p>
+          <img
+            src="./assets/card3.jpg"
+            alt="Slide 3"
+            class="w-full h-full object-cover" />
+        </div>
       </div>
     </div>
+
+    <!-- Navigation buttons -->
+      <button
+        class="absolute top-1/2 left-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none"
+        onclick="scrollCarousel(-1)">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button
+        class="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none"
+        onclick="scrollCarousel(1)">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+    <p class=" text-center text-gray-900 text-lg font-light my-10">
+      Para acessar mais imagens e obter informações detalhadas, acompanhe-nos em nossas redes sociais. Os links estão disponíveis abaixo.
+    </p>
+  </div>
+</div>
 
     <!--Sobre -->
     <div class=" page-menu hidden"  id="about">
       <h2 class="text-xl xl:text-3xl md:text-2xl font-bold text-gray-800 text-center mt-9 border-b-2 uppercase">Bem-Vindo à GL Estética Automotiva: O Seu Lava Jato de Alta Qualidade </h2>
       <div class="grid grid-cols-1 md:grid-cols-1 gap-7 md:gap-10 max-w-7xl text-center mx-3 xl:mx-auto mt-4 pb-10 ">
         <p class="text-lg xl:text-2xl font-light text-gray-800 px-2">No mundo movimentado de hoje, onde o tempo é precioso e a primeira impressão conta muito, seu carro é mais do que apenas um meio de transporte. É uma extensão de sua personalidade, um reflexo de seu estilo de vida. 
-          <span class="font-semibold text-gray-800">Na GL Estética Automotiva</span>, entendemos a importância de manter seu veículo impecável, tanto por dentro quanto por fora.
+        <span class="font-semibold text-gray-800">Na GL Estética Automotiva</span>, entendemos a importância de manter seu veículo impecável, tanto por dentro quanto por fora.
             Somos mais do que um simples lava jato - somos apaixonados por cuidar do seu carro como se fosse nosso próprio. Aqui estão alguns motivos pelos quais somos a escolha número um para aqueles que exigem apenas o melhor para seus veículos: </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 mx-4 xl:mx-auto gap-8 md:gap-14">
-              <div class="card">
-                <div class="image-box">
-                  <img src="./assets/card1.jpg" alt="">
-                </div>
-                <div class="content">
-                  <h3>Experiência e Excelência</h3>
-                  <p> Experiência e Excelência: Com anos de experiência no setor automotivo, nossa equipe de especialistas é treinada para oferecer os mais altos padrões de qualidade em todos os serviços que oferecemos. De lavagens detalhadas a tratamentos de polimento de pintura, cada carro que passa por nossas mãos recebe o cuidado e a atenção que merece. </p>
-                </div>
-              </div>
-              
-              <div class="card">
-                <div class="image-box">
-                  <img src="./assets/card2.jpg" alt="">
-                </div>
-                <div class="content">
-                  <h3>Tecnologia de Ponta</h3>
-                  <p>Tecnologia de Ponta: Na GL Estética Automotiva, investimos nas mais recentes tecnologias e produtos de ponta para garantir resultados impecáveis. Nossos equipamentos de lavagem são os mais avançados do mercado, garantindo uma limpeza profunda e eficaz, enquanto nossos produtos são cuidadosamente selecionados para proteger e realçar a beleza de seu veículo. </p>
-                </div>
-              </div>
-              
-              <div class="card">
-                <div class="image-box">
-                  <img src="./assets/card3.jpg" alt="">
-                </div>
-                <div class="content">
-                  <h3>Personalização e Atendimento Personalizado</h3>
-                  <p> Personalização e Atendimento Personalizado: Sabemos que cada carro é único, e é por isso que oferecemos uma variedade de serviços personalizados para atender às necessidades específicas de cada cliente. Desde a remoção de manchas difíceis até a restauração de acabamentos de alto brilho, estamos aqui para transformar sua visão de um carro impecável em realidade.
-                    Compromisso com a Sustentabilidade: Na GL Estética Automotiva, estamos comprometidos com práticas sustentáveis e ecologicamente corretas. </p>
-                  </div>
-                </div>
-                
-                <div class="card">
-                <div class="image-box">
-                  <img src="./assets/card4.jpg" alt="">
-                </div>
-                <div class="content">
-                  <h3>Ecologico</h3>
-                  <p> Utilizamos produtos ecológicos sempre que possível e implementamos medidas para reduzir nosso impacto ambiental, garantindo que possamos cuidar de seu carro sem prejudicar o planeta.
-                    Então, se você está procurando mais do que apenas um simples lava jato, venha nos visitar na GL Estética Automotiva. Deixe-nos mostrar como podemos elevar o cuidado com o seu carro a um nível totalmente novo. Seu veículo merece o melhor - e nós estamos aqui para entregar isso a você. </p>
-              </div>
-    
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-4 xl:mx-auto gap-8 md:gap-14">
+          <div class="card">
+            <div class="image-box">
+              <img src="./assets/card1.jpg" alt="">
             </div>
-              
+          <div class="content">
+            <h3>Experiência e Excelência</h3>
+            <p> Experiência e Excelência: Com anos de experiência no setor automotivo, nossa equipe de especialistas é treinada para oferecer os mais altos padrões de qualidade em todos os serviços que oferecemos. De lavagens detalhadas a tratamentos de polimento de pintura, cada carro que passa por nossas mãos recebe o cuidado e a atenção que merece. </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-box">
+            <img src="./assets/card2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Tecnologia de Ponta</h3>
+            <p>Tecnologia de Ponta: Na GL Estética Automotiva, investimos nas mais recentes tecnologias e produtos de ponta para garantir resultados impecáveis. Nossos equipamentos de lavagem são os mais avançados do mercado, garantindo uma limpeza profunda e eficaz, enquanto nossos produtos são cuidadosamente selecionados para proteger e realçar a beleza de seu veículo. </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-box">
+            <img src="./assets/card3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Personalização e Atendimento Personalizado</h3>
+            <p> Personalização e Atendimento Personalizado: Sabemos que cada carro é único, e é por isso que oferecemos uma variedade de serviços personalizados para atender às necessidades específicas de cada cliente. Desde a remoção de manchas difíceis até a restauração de acabamentos de alto brilho, estamos aqui para transformar sua visão de um carro impecável em realidade.
+              Compromisso com a Sustentabilidade: Na GL Estética Automotiva, estamos comprometidos com práticas sustentáveis e ecologicamente corretas. </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-box">
+              <img src="./assets/card4.jpg" alt="">
+            </div>
+          <div class="content">
+            <h3>Ecologico</h3>
+            <p> Utilizamos produtos ecológicos sempre que possível e implementamos medidas para reduzir nosso impacto ambiental, garantindo que possamos cuidar de seu carro sem prejudicar o planeta.
+              Então, se você está procurando mais do que apenas um simples lava jato, venha nos visitar na GL Estética Automotiva. Deixe-nos mostrar como podemos elevar o cuidado com o seu carro a um nível totalmente novo. Seu veículo merece o melhor - e nós estamos aqui para entregar isso a você. </p>
+          </div>
+        </div>
       </div>
-    </div>
-            
+      <p class="mt-5 text-center text-gray-900 text-lg font-light">
+        Para acessar mais imagens e obter informações detalhadas, acompanhe-nos em nossas redes sociais. Os links estão disponíveis abaixo.
+      </p>
+    </div>     
   </div>
     
 
@@ -652,5 +566,18 @@
   </footer>
 <!--Fim Button Cart Footer-->
   
+<script>
+  let currentIndex = 0;
+
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const totalSlides = carousel.children.length;
+    currentIndex =
+      (currentIndex + direction + totalSlides) % totalSlides;
+    carousel.style.transform = `translateX(-${
+      currentIndex * 100
+    }%)`;
+  }
+</script>
   </body>
 </html>
