@@ -24,7 +24,7 @@ footer .w-full {
 
 /*cards do sobre*/
 .card{
-  width: 21rem;
+  width: 18rem;
   image: center;
   aspect-ratio: 1 / 0.7;
   border-radius: .5rem;
@@ -82,7 +82,7 @@ footer .w-full {
 }
 
 .content h3{
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   scale: 0.7;
   font-size: .85rem;
 }
@@ -103,10 +103,21 @@ footer .w-full {
   transform: translateY(0);
 }
 
+@media (min-width: 375px) {
+  .card{
+    width:21.5rem;
+  }
+}
+@media (min-width: 425px) {
+  .card{
+    width:24.5rem;
+  }
+}
+
 @media (min-width: 768px) {
 
   .card{
-    width: 35rem;
+    width: 21rem;
   }
 
   .content{
@@ -114,17 +125,29 @@ footer .w-full {
   }
 
   .content h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .content p{
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 10px;
+    line-height: 1.4;
   }
 
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
+  .card{
+    width: 29rem;
+  }
+  .content h3{
+    font-size: 1.55rem;
+  }
+
+  .content p{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
   .accordion {
     width: 100%;
   }
