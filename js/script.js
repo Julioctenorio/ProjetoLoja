@@ -310,3 +310,14 @@ if (isOpen) {
   spanItem.classList.add('border-red-500');
   spanItem.classList.add('text-red-500');
 }
+
+/*
+//carousel
+import {
+  Carousel,
+  initTWE,
+} from "tw-elements";
+
+initTWE({ Carousel });
+*/
+
