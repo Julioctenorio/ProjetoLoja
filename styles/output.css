@@ -3234,6 +3234,21 @@ footer .w-full {
   }
 }
 
+@media (min-width: 1440px) {
+  .card{
+    width: 37rem;
+  }
+
+  .content h3{
+    font-size: 2.1rem;
+  }
+
+  .content p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
