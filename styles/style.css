@@ -6,6 +6,10 @@ body {
   background-color: #f6f7f8;
 }
 
+header h1, .about-services p{
+  text-shadow: 2px 2px 5px red;
+}
+
 footer {
   position: relative;
   z-index: 10; /* Garanta que ele está em cima de outros elementos */

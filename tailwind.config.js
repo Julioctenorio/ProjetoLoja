@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "home": "url('/assets/bg1.jpeg')"
+        "home": "url('/assets/bgperrucci.webp')"
       },
       colors: {
         primary: {
